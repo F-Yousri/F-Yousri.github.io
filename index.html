@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahd Yousri — Senior Backend Engineer</title>
-    <meta name="description" content="Fahd Yousri — Senior Backend Engineer building fintech infrastructure in Saudi Arabia. PHP, Laravel, API design, DevOps.">
+    <title>Fahd Yousri — Senior Software Engineer</title>
+    <meta name="description" content="Fahd Yousri — Senior Software Engineer. Fintech, sports tech, e-learning. Laravel, Ruby on Rails, Node.js. Based in Saudi Arabia.">
     <style>
         :root {
             --bg: #0a0a0a;
@@ -32,138 +32,49 @@
             padding: 80px 24px;
         }
 
-        .header {
-            margin-bottom: 48px;
-        }
+        .header { margin-bottom: 48px; }
+        .header h1 { font-size: 2rem; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.02em; }
+        .header .subtitle { color: var(--muted); font-size: 1.1rem; }
+        .header .location { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
 
-        .header h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
-        }
-
-        .header .subtitle {
-            color: var(--muted);
-            font-size: 1.1rem;
-        }
-
-        .header .location {
-            color: var(--muted);
-            font-size: 0.9rem;
-            margin-top: 4px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
+        .section { margin-bottom: 40px; }
         .section h2 {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--muted);
-            margin-bottom: 16px;
-            font-weight: 500;
+            font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--muted); margin-bottom: 16px; font-weight: 500;
         }
+        .section p { color: var(--text); font-size: 1rem; line-height: 1.7; }
 
-        .section p {
-            color: var(--text);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
+        .skills { display: flex; flex-wrap: wrap; gap: 8px; }
         .skill {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 6px 14px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: var(--text);
+            background: var(--surface); border: 1px solid var(--border);
+            padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; color: var(--text);
         }
 
-        .projects {
-            display: grid;
-            gap: 12px;
-        }
-
+        .projects { display: grid; gap: 12px; }
         .project {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 20px;
-            text-decoration: none;
-            color: var(--text);
-            transition: border-color 0.2s;
+            background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+            padding: 20px; text-decoration: none; color: var(--text); transition: border-color 0.2s;
         }
+        .project:hover { border-color: var(--accent); }
+        .project h3 { font-size: 1rem; font-weight: 500; margin-bottom: 4px; }
+        .project p { color: var(--muted); font-size: 0.875rem; }
+        .project .lang { display: inline-block; margin-top: 8px; font-size: 0.75rem; color: var(--accent); }
 
-        .project:hover {
-            border-color: var(--accent);
-        }
+        .links { display: flex; gap: 20px; }
+        .links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .links a:hover { color: var(--accent-hover); }
 
-        .project h3 {
-            font-size: 1rem;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
+        .domains { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .domain { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+        .domain h3 { font-size: 0.9rem; font-weight: 500; margin-bottom: 4px; }
+        .domain p { color: var(--muted); font-size: 0.8rem; }
 
-        .project p {
-            color: var(--muted);
-            font-size: 0.875rem;
-        }
-
-        .project .lang {
-            display: inline-block;
-            margin-top: 8px;
-            font-size: 0.75rem;
-            color: var(--accent);
-        }
-
-        .links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .links a {
-            color: var(--muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
-        }
-
-        .links a:hover {
-            color: var(--accent-hover);
-        }
-
-        .domains {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .domain {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 16px;
-        }
-
-        .domain h3 {
-            font-size: 0.9rem;
-            font-weight: 500;
-            margin-bottom: 4px;
-        }
-
-        .domain p {
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
+        .experience { display: grid; gap: 20px; }
+        .role { border-left: 2px solid var(--border); padding-left: 20px; }
+        .role h3 { font-size: 1rem; font-weight: 500; }
+        .role .company { color: var(--accent); font-size: 0.9rem; }
+        .role .period { color: var(--muted); font-size: 0.8rem; margin-bottom: 6px; }
+        .role p { color: var(--muted); font-size: 0.875rem; line-height: 1.6; }
 
         @media (max-width: 600px) {
             .container { padding: 48px 20px; }
@@ -176,37 +87,68 @@
     <div class="container">
         <header class="header">
             <h1>Fahd Yousri</h1>
-            <div class="subtitle">Senior Backend Engineer</div>
+            <div class="subtitle">Senior Software Engineer</div>
             <div class="location">Riyadh, Saudi Arabia</div>
         </header>
 
         <section class="section">
             <h2>About</h2>
             <p>
-                I build fintech infrastructure — commodity trading platforms, digital signature workflows,
-                and payment systems designed for regulatory compliance and scale. I care about clean architecture,
-                automated pipelines, and systems that don't wake you up at 3am.
+                Petroleum engineer turned software engineer. I've spent 6+ years building backend systems
+                across fintech, sports tech, and e-learning — from commodity trading platforms with
+                SAMA compliance to sports analytics and e-learning adopted by the Saudi Ministry of Education.
+                I care about clean architecture, reliable integrations, and shipping things that work.
             </p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="role">
+                    <h3>Senior Software Engineer</h3>
+                    <div class="company">Trell</div>
+                    <div class="period">Jan 2025 — Present &middot; Riyadh, Saudi Arabia</div>
+                    <p>Fintech platform for commodity trading and invoice financing. Building SAMA-compliant systems with 8+ external integrations — trading engines, digital signatures, virtual IBANs, and identity verification.</p>
+                </div>
+                <div class="role">
+                    <h3>Technical Lead</h3>
+                    <div class="company">One Future Football</div>
+                    <div class="period">Aug 2023 — Mar 2025 &middot; Melbourne, Australia (Remote)</div>
+                    <p>Led backend architecture for a sports tech platform. Laravel + Node.js/TypeScript on AWS.</p>
+                </div>
+                <div class="role">
+                    <h3>Lead Engineer</h3>
+                    <div class="company">Ampjar</div>
+                    <div class="period">Aug 2021 — Dec 2022 &middot; Australia</div>
+                    <p>Led architecture decisions, design patterns, and technology choices. Built and maintained the platform with Laravel, Livewire, Alpine.js, and MySQL.</p>
+                </div>
+                <div class="role">
+                    <h3>Software Engineer</h3>
+                    <div class="company">Aanaab</div>
+                    <div class="period">Feb 2023 — Dec 2023 &middot; Riyadh, Saudi Arabia</div>
+                    <p>Built Ruby on Rails admin systems for an e-learning platform adopted by the Saudi Ministry of Education. Integrated Zoom, Vimeo, and Zapier.</p>
+                </div>
+            </div>
         </section>
 
         <section class="section">
             <h2>Domain Expertise</h2>
             <div class="domains">
                 <div class="domain">
-                    <h3>Commodity Trading</h3>
-                    <p>Buy/sell/transfer engines integrated with trading platforms</p>
+                    <h3>Fintech</h3>
+                    <p>Commodity trading, invoice financing, SAMA compliance, AML</p>
                 </div>
                 <div class="domain">
-                    <h3>Digital Signatures</h3>
-                    <p>Contract workflows with legally binding e-signature providers</p>
+                    <h3>Integrations</h3>
+                    <p>Digital signatures, banking APIs, identity verification, Stripe</p>
                 </div>
                 <div class="domain">
-                    <h3>Payments & Banking</h3>
-                    <p>Virtual IBANs, payment processing, Stripe Connect</p>
+                    <h3>Sports Tech</h3>
+                    <p>Backend architecture and APIs for sports analytics platforms</p>
                 </div>
                 <div class="domain">
-                    <h3>Compliance</h3>
-                    <p>SAMA regulations, AML checks, identity verification</p>
+                    <h3>E-Learning</h3>
+                    <p>Government-adopted platforms, video integrations, admin tools</p>
                 </div>
             </div>
         </section>
@@ -216,17 +158,19 @@
             <div class="skills">
                 <span class="skill">PHP 8.4</span>
                 <span class="skill">Laravel</span>
+                <span class="skill">Ruby on Rails</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">TypeScript</span>
                 <span class="skill">MySQL</span>
+                <span class="skill">PostgreSQL</span>
                 <span class="skill">Redis</span>
                 <span class="skill">RabbitMQ</span>
                 <span class="skill">Docker</span>
+                <span class="skill">AWS</span>
                 <span class="skill">GitHub Actions</span>
-                <span class="skill">REST APIs</span>
-                <span class="skill">OAuth2</span>
                 <span class="skill">React</span>
+                <span class="skill">Livewire</span>
                 <span class="skill">Inertia.js</span>
-                <span class="skill">Ruby on Rails</span>
-                <span class="skill">Python</span>
             </div>
         </section>
 
@@ -242,11 +186,6 @@
                     <h3>laravel-cashier-stripe-connect</h3>
                     <p>Stripe Connect add-on for Laravel Cashier — drop-in, no extra config</p>
                     <span class="lang">PHP</span>
-                </a>
-                <a href="https://github.com/F-Yousri/on-demand-economy" class="project" target="_blank">
-                    <h3>on-demand-economy</h3>
-                    <p>On-demand application server built with Ruby on Rails API</p>
-                    <span class="lang">Ruby</span>
                 </a>
             </div>
         </section>
