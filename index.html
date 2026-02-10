@@ -1,1 +1,263 @@
-portfolio under constructioon ...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahd Yousri — Senior Backend Engineer</title>
+    <meta name="description" content="Fahd Yousri — Senior Backend Engineer building fintech infrastructure in Saudi Arabia. PHP, Laravel, API design, DevOps.">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --border: #222;
+            --text: #e0e0e0;
+            --muted: #888;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .header {
+            margin-bottom: 48px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .header .location {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .section p {
+            color: var(--text);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+
+        .projects {
+            display: grid;
+            gap: 12px;
+        }
+
+        .project {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            transition: border-color 0.2s;
+        }
+
+        .project:hover {
+            border-color: var(--accent);
+        }
+
+        .project h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .project p {
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+
+        .project .lang {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.75rem;
+            color: var(--accent);
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: var(--accent-hover);
+        }
+
+        .domains {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .domain {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .domain h3 {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .domain p {
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 48px 20px; }
+            .header h1 { font-size: 1.6rem; }
+            .domains { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Fahd Yousri</h1>
+            <div class="subtitle">Senior Backend Engineer</div>
+            <div class="location">Riyadh, Saudi Arabia</div>
+        </header>
+
+        <section class="section">
+            <h2>About</h2>
+            <p>
+                I build fintech infrastructure — commodity trading platforms, digital signature workflows,
+                and payment systems designed for regulatory compliance and scale. I care about clean architecture,
+                automated pipelines, and systems that don't wake you up at 3am.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Domain Expertise</h2>
+            <div class="domains">
+                <div class="domain">
+                    <h3>Commodity Trading</h3>
+                    <p>Buy/sell/transfer engines integrated with trading platforms</p>
+                </div>
+                <div class="domain">
+                    <h3>Digital Signatures</h3>
+                    <p>Contract workflows with legally binding e-signature providers</p>
+                </div>
+                <div class="domain">
+                    <h3>Payments & Banking</h3>
+                    <p>Virtual IBANs, payment processing, Stripe Connect</p>
+                </div>
+                <div class="domain">
+                    <h3>Compliance</h3>
+                    <p>SAMA regulations, AML checks, identity verification</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Tech Stack</h2>
+            <div class="skills">
+                <span class="skill">PHP 8.4</span>
+                <span class="skill">Laravel</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Redis</span>
+                <span class="skill">RabbitMQ</span>
+                <span class="skill">Docker</span>
+                <span class="skill">GitHub Actions</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">OAuth2</span>
+                <span class="skill">React</span>
+                <span class="skill">Inertia.js</span>
+                <span class="skill">Ruby on Rails</span>
+                <span class="skill">Python</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Open Source</h2>
+            <div class="projects">
+                <a href="https://github.com/F-Yousri/api-versioning-generator" class="project" target="_blank">
+                    <h3>api-versioning-generator</h3>
+                    <p>Generate file structure for API versioning in PHP projects</p>
+                    <span class="lang">PHP</span>
+                </a>
+                <a href="https://github.com/F-Yousri/laravel-cashier-stripe-connect" class="project" target="_blank">
+                    <h3>laravel-cashier-stripe-connect</h3>
+                    <p>Stripe Connect add-on for Laravel Cashier — drop-in, no extra config</p>
+                    <span class="lang">PHP</span>
+                </a>
+                <a href="https://github.com/F-Yousri/on-demand-economy" class="project" target="_blank">
+                    <h3>on-demand-economy</h3>
+                    <p>On-demand application server built with Ruby on Rails API</p>
+                    <span class="lang">Ruby</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Connect</h2>
+            <div class="links">
+                <a href="https://linkedin.com/in/fahd-yousri" target="_blank">LinkedIn</a>
+                <a href="https://github.com/F-Yousri" target="_blank">GitHub</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
